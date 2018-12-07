@@ -1,0 +1,118 @@
+<html>
+<head>
+<title>DIT - Cathal Brugha Street</title>
+<link href="CBScss.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div class="header">
+  <h1>DIT - Cathal Brugha Street</h1>
+</div>
+
+<div class="navbar">
+		<a href="CBSmain.html">Welcome</a>
+		<a href="Course1.html">Culinary Arts</a>
+		<a href="Course2.html">Culinary Entrepreneurship</a>
+		<a href="..\Main\main.html" class="right">Return</a>
+</div>
+
+<div class="row">
+  <div class="main">
+      <h2>Welcome to D.I.T School of Culinary Arts and Food Technology</h2>
+      <div><img src="Graphics\chefs.JPG" id="CBSimg1"></div>
+      <p>DIT School of Culinary Arts and Food Technology provides a range of unique and innovative programmes (usually first in their field) 
+		in a modular format including higher certificate, degree, masters degree and postgraduate research degrees.</p>
+		<p>Culinary Arts and Food Technology is a multidisciplinary field and areas of study include culinary performing arts, gastronomy,
+		bakery operations, bar management, food product development, health, hygiene & safety and wine studies. Modules from the 
+		full-time programmes are available on a part-time continuing professional development (CPD) basis.</p>
+	  <br>
+	  
+	  
+	  
+      
+	<div class="slideshow-container">
+
+
+		<div class="mySlides fade">
+			<div class="numbertext">1 / 3</div>
+			<img src="Graphics\DIT.JPG" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">2 / 3</div>
+			<img src="Graphics\class.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">3 / 3</div>
+			<img src="Graphics\CBS2.jpg" style="width:100%">
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+</script>
+	  
+      <p>The School offers a wide range of short, specifically tailored professional development courses designed to meet the needs of industry and has an active research and development service through its close ties to the DIT Food Product Development Centre. The School of Culinary Arts and Food Technology is a member of the World Association of Chefs Society (WACS) and recognised as one of the world leaders in culinary higher education.</p>
+      <p>The School is closely involved with the latest developments in its core disciplines and maintains strong links with academia, industry, national and international bodies and with alumni thus ensuring that graduates are much sought after and have the skills and knowledge necessary to compete at the highest level. Research interests include, food allergies & anxieties, organic foods, nutrition & wellbeing, value added food products, enterprise & technology, food safety, quality enhancement and the culinary performing arts, new food innovation, food management systems, gastronomy & culture.</p>
+ 
+ </div>
+</div>
+
+
+<br>
+<br>
+<br>
+
+
+<div>
+	<ul id="CBScontact">
+		<li><b>Location:</b>				 DIT, Cathal Brugha Street</li>
+		<li><b>Phone:</b>					 +353-1-402-4344/4340</li>
+		<li><b>Head of School:</b>			 Dr Frank Cullen</li>
+		<li><b>School Secretaries:</b>		 Ms. Michelle Gahan and Ms. Geraldine Kelly</li>
+		<li><b>Email:</b>					 scaft@dit.ie</li>
+	</ul>
+</div>
+
+</body>
+</html>
+
+
+<!-- Ciaran Dawson C18465384 -->
